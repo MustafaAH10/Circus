@@ -13,10 +13,10 @@ public class Trainer {
         getToSpeak(d2);
 
         train(new Duck());
-        train(new Parrot());
+        // train(new Parrot());
 
-//        Animal a2 = new Animal();
-//        Bird b2 = new Bird();
+        Animal a2 = new Animal();
+        Bird b2 = new Bird();
 
     }
 
@@ -25,11 +25,7 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-        if (bird instanceof Duck) {
-            Duck d = (Duck) bird;
-            d.swim();
-        } else {
-            System.out.println("not a duck");
-        }
+        Duck d = (Duck) bird;
+        d.swim();
     }
 }
