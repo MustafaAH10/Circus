@@ -8,7 +8,6 @@ public class Circus {
             new Cannon(5),
             new Cannon(100)
     };
-
     private static void makeAnimalsTalk() {
         for (Animal a : animals) {
             System.out.println(a);
@@ -16,9 +15,9 @@ public class Circus {
         }
     }
 
-    private static int calculateValue(Equipment[] equipments) {
+    private static int calculateValue(Asset[] Assets) {
         int total = 0;
-        for (Equipment e : equipments) {
+        for (Asset e : Assets) {
             if (e.getValue() <= 5) {
                 System.out.println("Ignoring low value item: " + e.getValue());
             } else {
